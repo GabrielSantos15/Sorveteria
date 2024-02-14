@@ -1,0 +1,28 @@
+/* Tablets */
+@media screen and (min-width: 600px) {
+    header #nav-bar{
+        display: block;
+    }
+    #menu-icon{
+        background: red;
+        display: none ;
+    }
+    #infos div{
+        flex-direction: column;
+        height: 300px;
+        width: 250px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    .carrosel {
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        overflow-x: auto;
+    
+        padding: 2em;
+        gap: 2.5em;
+    }
+}
