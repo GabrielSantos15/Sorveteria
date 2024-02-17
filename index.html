@@ -16,7 +16,7 @@
 <body>
     <header>
         <div id="logo_container">
-            <img src="img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="logo" width="70px">
             <h2>Frio & Sabor</h2>
         </div>
         <nav id="nav-bar">
@@ -27,18 +27,23 @@
                 <li><a href="#" id="contato-button">Contato</a></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-bars" id="menu-icon" onclick="menu()" ></i>
     </header>
+    <nav id="menu_mobile" class="hidden">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#section_avaliacoes">Avaliações</a></li>
+            <li><a href="#" id="contato-button">Contato</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section id="home">
             <div id="home-container">
-                <h2>Experimente <span>Frio & Sabor</span></h2>
-                <h2>O melhor sorvete da região</h2>
+                <h2>Experimente <span>Frio & Sabor</span><br>O melhor sorvete da região</h2>
                 <p>Quer experimentar uma explosão de sabores gelados que vão refrescar até os dias mais quentes? Então
-                    venha para a 'Frio & Sabor' e descubra o verdadeiro significado da indulgência gelada! Nossos
-                    sorvetes artesanais são feitos com os melhores ingredientes, garantindo uma experiência única a cada
-                    colherada.</p>
+                    venha para a 'Frio & Sabor' e descubra o verdadeiro significado da indulgência gelada!</p>
                 <button>Fazer pedido <i class="fa-brands fa-whatsapp"></i></button>
 
             </div>
@@ -81,9 +86,10 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>(250+)</p>
                     </span>
-                    <p>Lorem ipsum dolor sit amet, voluptatibus dolores ad opt!</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="card">
                     <img src="img/sorvete-cone.webp" alt="Sorvetes de casquinha">
@@ -94,6 +100,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
+                        <p>(200+)</p>
                     </span>
                     <p>Lorem ipsum doles ad opt!</p>
                 </div>
@@ -105,7 +112,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>(250+)</p>
                     </span>
                     <p>Lorem ipsum dolores ad opt!</p>
                 </div>
@@ -118,6 +126,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
+                        <p>(150+)</p>
                     </span>
                     <p>Lorem ipsum dolor es ad opt!</p>
                 </div>
@@ -128,7 +137,7 @@
             <h3>O que os clientes falam sobre nós</h3>
             <div class="container_avaliacoes">
                 <picture>
-                    <img src="img/copo-milkshake.jpg" alt="Copo com milkshake">
+                    <img src="img/copo-milkshake.png" alt="Copo com milkshake">
                 </picture>
                 <div class="avaliacoes">
                     <div class="avaliacao">
@@ -173,5 +182,13 @@
     </main>
 
 </body>
+    <script>
+        // Script para o menu mobile
+        const menuMobile = document.querySelector('#menu_mobile');
 
+        function menu(){
+            menuMobile.classList.contains('hidden') ? menuMobile.classList.remove('hidden'): menuMobile.classList.add('hidden')
+        }
+
+    </script>
 </html>

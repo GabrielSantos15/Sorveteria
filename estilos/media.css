@@ -4,18 +4,29 @@
         display: block;
     }
     #menu-icon{
-        background: red;
         display: none ;
     }
-    #infos div{
-        flex-direction: column;
-        height: 300px;
-        width: 250px;
+
+    #menu_mobile{
+        display: none;
+    }
+    
+    #home #home-container h2 {
+        font-size: 2em;
+    }
+
+    .avaliacao:last-child {
+        margin-top: 1em;
+        transform: translate(10%, 0);
     }
 }
 
 /* desktop */
 @media screen and (min-width: 768px) {
+    header #logo_container h2 {
+        display: block;
+    }
+
     .carrosel {
         justify-content: center;
         flex-wrap: wrap;
