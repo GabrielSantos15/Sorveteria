@@ -21,20 +21,20 @@
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="#section_avaliacoes">Avaliações</a></li>
-                <li><a href="#" id="contato-button">Contato</a></li>
+                <li><a href="#contato" id="contato-button">Contato</a></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars" id="menu-icon" onclick="menu()" ></i>
+        <i class="fa-solid fa-bars" id="menu-icon" onclick="menu()"></i>
     </header>
     <nav id="menu_mobile" class="hidden">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#cardapio">Cardápio</a></li>
             <li><a href="#section_avaliacoes">Avaliações</a></li>
-            <li><a href="#" id="contato-button">Contato</a></li>
+            <li><a href="#contato" id="contato-button">Contato</a></li>
         </ul>
     </nav>
 
@@ -44,7 +44,7 @@
                 <h2>Experimente <span>Frio & Sabor</span><br>O melhor sorvete da região</h2>
                 <p>Quer experimentar uma explosão de sabores gelados que vão refrescar até os dias mais quentes? Então
                     venha para a 'Frio & Sabor' e descubra o verdadeiro significado da indulgência gelada!</p>
-                <button>Fazer pedido <i class="fa-brands fa-whatsapp"></i></button>
+                <a href="#">Fazer pedido <i class="fa-brands fa-whatsapp"></i></a>
 
             </div>
             <picture>
@@ -180,15 +180,35 @@
             </div>
         </section>
     </main>
+    <footer>
+        <h3>Frio & Sabor</h3>
+        <div id="container_redes">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <h4 id="contato">Contato</h4>
+        <div id="footer_contato">
+            
+            <span>
+                <h4>telefone:</h4>
+                <p>123 456 7890</p>
+            </span>
+            <span>
+                <h4>email:</h4>
+                <p>frioesabor@exemplo.com</p>
+            </span>
 
+    </footer>
 </body>
-    <script>
-        // Script para o menu mobile
-        const menuMobile = document.querySelector('#menu_mobile');
+<script>
+    // Script para o menu mobile
+    const menuMobile = document.querySelector('#menu_mobile');
 
-        function menu(){
-            menuMobile.classList.contains('hidden') ? menuMobile.classList.remove('hidden'): menuMobile.classList.add('hidden')
-        }
+    function menu() {
+        menuMobile.classList.contains('hidden') ? menuMobile.classList.remove('hidden') : menuMobile.classList.add('hidden')
+    }
 
-    </script>
+</script>
+
 </html>

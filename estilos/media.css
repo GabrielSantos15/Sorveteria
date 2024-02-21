@@ -37,3 +37,13 @@
         gap: 2.5em;
     }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  :target {
+    scroll-margin-top: 75px;
+  }
